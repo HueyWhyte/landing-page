@@ -68,8 +68,10 @@ export const NavigationBar = styled.nav`
     margin-right: 20px;
   }
 
-  @media ${device.laptop} {
-    /* max-width: 800px; */
+  @media ${device.mobileL} {
+    div {
+      display: none;
+    }
   }
 `;
 
