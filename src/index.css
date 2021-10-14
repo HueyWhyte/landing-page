@@ -23,3 +23,8 @@ body {
 input {
   font-family: "Nunito", sans-serif;
 }
+
+input:focus,
+button:focus {
+  outline: none;
+}
