@@ -26,6 +26,16 @@ export const PageContainer = styled.main`
   a {
     text-decoration: none;
   }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  @media ${device.mobileL} {
+    h3 {
+      font-size: 30px;
+    }
+  }
 `;
 
 export const NavigationBar = styled.nav`
@@ -106,6 +116,18 @@ export const Header = styled(motion.header)`
     margin-top: auto;
     margin-bottom: auto;
   }
+
+  @media ${device.mobileL} {
+    div {
+      width: 90%;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    img {
+      display: none;
+    }
+  }
 `;
 
 export const Team = styled.section`
@@ -152,6 +174,39 @@ export const Team = styled.section`
       border-radius: 20px;
       color: #fff;
       font-weight: 600;
+    }
+  }
+
+  @media ${device.mobileL} {
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    div {
+      margin-top: 5px;
+      margin-bottom: 5px;
+
+      h3 {
+        font-size: 30px;
+      }
+
+      p {
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    }
+
+    img {
+      width: 90%;
+      border-bottom-right-radius: 180px;
+      margin-bottom: auto;
+
+      border-right: 1px solid #160068;
+      border-bottom: 1px solid #160068;
+      padding-right: 30px;
+      padding-bottom: 30px;
+
+      /* margin-top: auto; */
+      /* margin-bottom: auto; */
     }
   }
 `;

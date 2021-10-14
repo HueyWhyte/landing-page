@@ -64,8 +64,8 @@ export default function App() {
           src={travel}
           alt=""
           initial={{ x: 30, y: 50 }}
-          animate={{ x: 0, y: 0 }}
-          transition={{ duration: 1 }}
+          animate={{ x: 0, y: 0, rotate: 360 }}
+          transition={{ duration: 2 }}
         />
 
         {/* <div class="tk-blob">
